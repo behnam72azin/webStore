@@ -1,0 +1,55 @@
+    
+ body {
+    font-family:"Lalezar";  
+ }  
+    
+ .part-top{
+    display: flex;
+
+    height: 200px;
+ }
+ .part-mid{
+    display: flex;
+    flex: 1;
+ }
+ .part-down{
+    display: flex;
+    flex: 1;
+ }   
+    
+    
+ .comic-neue-light {
+    font-family: "Comic Neue", serif;
+    font-weight: 300;
+    font-style: normal;
+    }
+
+    .comic-neue-regular {
+    font-family: "Comic Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+    .comic-neue-bold {
+    font-family: "Comic Neue", serif;
+    font-weight: 700;
+    font-style: normal;
+    }
+
+    .comic-neue-light-italic {
+    font-family: "Comic Neue", serif;
+    font-weight: 300;
+    font-style: italic;
+    }
+
+    .comic-neue-regular-italic {
+    font-family: "Comic Neue", serif;
+    font-weight: 400;
+    font-style: italic;
+    }
+
+    .comic-neue-bold-italic {
+    font-family: "Comic Neue", serif;
+    font-weight: 700;
+    font-style: italic;
+    }

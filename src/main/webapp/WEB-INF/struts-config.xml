@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"
+        "src/main/webapp/WEB-INF/struts-config_1_1.dtd">
+
+<struts-config>
+    <form-beans>
+        <form-bean name="myLoginForm" type="com.example.webstore.Forms.LoginForm"/>
+        <form-bean name="myRegisterForm" type="com.example.webstore.Forms.RegisterForm"/>
+    </form-beans>
+
+
+    <action-mappings>
+        <action path="/login" type="com.example.webstore.Actions.LoginAction"  scope="request" parameter="method"  validate="false" name="myLoginForm">
+            <forward name="go-login" path="/login.jsp"/>
+            <forward name="go-welcome" path="/welcome.do" redirect="true"/>
+        </action>
+        <action path="/register" type="com.example.webstore.Actions.RegisterAction" scope="request" parameter="method" validate="false" name="myRegisterForm">
+            <forward name="go-register" path="/register.jsp"/>
+            <forward name="end-register" path="/register.do" redirect="true"/>
+        </action>
+        <action path="/welcome" type="com.example.webstore.Actions.WelcomeAction" scope="request" parameter="method" validate="false" name="myWelcomeForm">
+            <forward name="go-welcome" path="/welcome.jsp"/>
+        </action>
+        <action path="/products" type="com.example.webstore.Actions.ProductsAction" scope="request" parameter="method" validate="false" name="myProductsForm">
+            <forward name="go-products" path="/products.jsp"/>
+        </action>
+    </action-mappings>
+
+    <message-resources parameter="messeges" key="myMesseges"/>
+</struts-config>
+

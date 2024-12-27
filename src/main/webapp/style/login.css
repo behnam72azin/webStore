@@ -1,0 +1,80 @@
+.error {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px; 
+    font-family: tahoma;
+}
+
+.login-div{
+    background-color: rgb(189, 211, 230);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgba(150, 150, 150, 2);
+}
+
+h2{
+    margin-top: 0;
+    text-align: right;            
+}
+
+.userpass-lable{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 23px;
+}
+
+.userpass-lable-div{
+    display:inline-block ;
+    vertical-align: top;
+}
+
+.userpass-input  {
+    display: block;
+    margin-top: 5px;
+}              
+.userpass-input-div{
+    display: inline-block;
+    vertical-align:  top;
+    margin-left: 10px;
+}
+
+.button-div{
+    text-align: center;
+    display: block;       
+}
+
+.login-botton{
+    padding-inline: 30px;
+    padding-block: 5px;
+    margin: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 6px;
+    background-color: rgb(192, 75, 75);
+    color: aliceblue;
+    transition: background-color 0.3s;
+}
+
+.login-botton:hover{
+    background-color: rgb(114, 44, 44);
+}
+
+.login-botton:active{
+    background-color: rgb(78, 30, 30);
+}
+
+.link-sabt{
+    display: block;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.container{
+display: flex;
+flex-direction: column;
+
+
+
+}

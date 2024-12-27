@@ -1,0 +1,98 @@
+.error {
+    color: red;
+    font-size: 12px;
+    font-family: tahoma;
+    margin-bottom: 0px;  
+
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    width: 225px;
+    
+}
+
+.login-div{
+    background-color: rgb(186, 228, 196);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgba(150, 150, 150, 2);
+}
+
+h2{
+    margin-top: 0;
+    text-align: right;
+}
+
+.user-lable{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 23px;
+}
+
+.pass-lable{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.userpass-lable-div{
+    display:inline-block ;
+    vertical-align: top;
+}
+
+.userpass-input  {
+    display: block;
+    margin-top: 5px;
+
+}
+
+.userpass-input-div{
+    display: inline-block;
+    vertical-align:  top;
+    text-align: right;
+    margin-left: 10px;
+}
+
+.button-div{
+    text-align: center;
+    display: block;       
+}
+
+.login-botton{
+    padding-inline: 30px;
+    padding-block: 5px;
+    margin: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 6px;
+    background-color: rgb(75, 192, 186);
+    color: aliceblue;
+    transition: background-color 0.3s;
+}
+
+.login-botton:hover{
+    background-color: rgb(56, 141, 137);
+}
+
+.login-botton:active{
+    background-color: rgb(34, 90, 87);
+}
+    
+.link-sabt{
+    display: block;
+    font-size: 13px;
+    direction: rtl;
+    text-decoration: none;
+}
+
+.alarm-lable-div{
+    display: block;
+    text-align: right;
+    font-family: tahoma;
+    text-align: right;
+}
