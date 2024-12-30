@@ -23,6 +23,8 @@ public class RegisterAction extends DispatchAction {
         RegisterForm registerForm = (RegisterForm) form;
         String username = registerForm.getUserName();
         String password = registerForm.getPassWord();
+        String role = registerForm.getRole();
+
         int status = -2;
         status = shop.addNewCustomer(username,password);
         if(status==1) {

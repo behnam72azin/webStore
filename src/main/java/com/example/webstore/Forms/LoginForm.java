@@ -7,6 +7,7 @@ public class LoginForm extends ActionForm {
 
     private String userName;
     private String passWord;
+    private String role = "customer";
     private String method;
 
     public String getMethod() {
@@ -31,6 +32,14 @@ public class LoginForm extends ActionForm {
 
     public void setPassWord(String passWord) {
         this.passWord = passWord;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 
     public void reset() {

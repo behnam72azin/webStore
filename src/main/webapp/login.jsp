@@ -16,23 +16,6 @@
     <link rel="stylesheet" href="style/general.css">
     <link rel="stylesheet" href="style/login.css">
 
-    <style>
-        .radio-container {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            border: 1px solid #ccc;
-            padding: 10px;
-            border-radius: 5px;
-            width: fit-content;
-            margin: 20px;
-        }
-
-        .radio-container label {
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-        }
-    </style>
 
 </head>
 <body>
@@ -70,16 +53,20 @@
 
                         </div>
                     </div>
-
-                    <div class="radio-container">
-                        <label>
-                            <input type="radio" name="role" value="admin"> مدیر
-                        </label>
-                        <label>
-                            <input type="radio" name="role" value="user"> کاربر
-                        </label>
+                    <div>
+                        <div class="radio-container">
+                            <label>
+                                <html:radio property="role" value="admin" />
+                                <bean:message bundle="myMesseges" key="login.label.admin"/>
+                            </label>
+                        </div>
+                        <div class="radio-container">
+                            <label>
+                                <html:radio property="role" value="customer"/>
+                                <bean:message bundle="myMesseges" key="login.label.customer"/>
+                            </label>
+                        </div>
                     </div>
-
                     <div class="button-div">
                         <div class="button-div">
                             <button type="button" onclick="validateLogin()" class="login-botton"><bean:message bundle="myMesseges" key="login.button"/></button>

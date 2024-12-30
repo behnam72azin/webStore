@@ -45,6 +45,22 @@
                     <div class="alarm-lable-div">
                         <p id="passwordError" class="error"></p>
                     </div>
+
+                    <div>
+                        <div class="radio-container">
+                            <label>
+                                <html:radio property="role" value="admin" />
+                                <bean:message bundle="myMesseges" key="register.label.admin"/>
+                            </label>
+                        </div>
+                        <div class="radio-container">
+                            <label>
+                                <html:radio property="role" value="customer"/>
+                                <bean:message bundle="myMesseges" key="register.label.customer"/>
+                            </label>
+                        </div>
+                    </div>
+
                     <div class="button-div">
                         <div class="button-div">
                             <button type="button" onclick="validateRegister()" class="login-botton">

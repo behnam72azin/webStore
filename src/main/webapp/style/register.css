@@ -96,3 +96,20 @@ h2{
     font-family: tahoma;
     text-align: right;
 }
+
+.radio-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #ccc;
+    padding: 1px;
+    border-radius: 5px;
+    width: fit-content;
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+.radio-container label {
+    font-family: sans-serif;
+    font-size: 14px;
+}

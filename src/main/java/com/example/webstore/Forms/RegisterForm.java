@@ -8,6 +8,7 @@ public class RegisterForm extends ActionForm {
     Shop shop = Shop.getShop();
     private String userName = null;
     private String passWord = null;
+    private String role = "customer";
     private Boolean addCustomer = null;
     private Boolean noSpace = null;
     private String method = null;
@@ -30,6 +31,12 @@ public class RegisterForm extends ActionForm {
     }
     public void setPassWord(String passWord) {
         this.passWord = passWord;
+    }
+    public String getRole() {
+        return role;
+    }
+    public void setRole(String role) {
+        this.role = role;
     }
     public boolean isAddCustomer() {
         return addCustomer;
