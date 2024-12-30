@@ -5,12 +5,12 @@ public class Admin extends User{
 
 
     @Override
-    public void login() {
-
+    public void login(){
+        //TODO-
     }
 
     @Override
     public void register() {
-
+        //TODO-
     }
 }
