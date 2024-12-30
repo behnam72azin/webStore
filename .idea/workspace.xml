@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="672870ef-30d4-460d-8a10-b406004d6517" name="Changes" comment="first commit" />
+    <list default="true" id="672870ef-30d4-460d-8a10-b406004d6517" name="Changes" comment="oraganized code" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -181,6 +181,7 @@
       <workItem from="1735286604541" duration="5113000" />
       <workItem from="1735294254705" duration="1293000" />
       <workItem from="1735295576922" duration="13825000" />
+      <workItem from="1735572600993" duration="399000" />
     </task>
     <task id="LOCAL‎−۰۰۰۰۱" summary="first commit">
       <option name="closed" value="true" />
@@ -189,7 +190,21 @@
       <option name="presentableId" value="LOCAL‎−۰۰۰۰۱" />
       <updated>1735312158560</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL‎−۰۰۰۰۲" summary="oraganized code">
+      <option name="closed" value="true" />
+      <created>1735572822599</created>
+      <option name="number" value="LOCAL‎−۰۰۰۰۲" />
+      <option name="presentableId" value="LOCAL‎−۰۰۰۰۲" />
+      <updated>1735572822599</updated>
+    </task>
+    <task id="LOCAL‎−۰۰۰۰۳" summary="oraganized code">
+      <option name="closed" value="true" />
+      <created>1735572935971</created>
+      <option name="number" value="LOCAL‎−۰۰۰۰۳" />
+      <option name="presentableId" value="LOCAL‎−۰۰۰۰۳" />
+      <updated>1735572935971</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +223,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="oraganized code" />
+    <option name="LAST_COMMIT_MESSAGE" value="oraganized code" />
   </component>
 </project>
