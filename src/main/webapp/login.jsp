@@ -15,6 +15,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lalezar&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/general.css">
     <link rel="stylesheet" href="style/login.css">
+
+    <style>
+        .radio-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            width: fit-content;
+            margin: 20px;
+        }
+
+        .radio-container label {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -51,6 +70,16 @@
 
                         </div>
                     </div>
+
+                    <div class="radio-container">
+                        <label>
+                            <input type="radio" name="role" value="admin"> مدیر
+                        </label>
+                        <label>
+                            <input type="radio" name="role" value="user"> کاربر
+                        </label>
+                    </div>
+
                     <div class="button-div">
                         <div class="button-div">
                             <button type="button" onclick="validateLogin()" class="login-botton"><bean:message bundle="myMesseges" key="login.button"/></button>
