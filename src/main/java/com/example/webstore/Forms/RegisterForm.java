@@ -9,8 +9,8 @@ public class RegisterForm extends ActionForm {
     private String userName = null;
     private String passWord = null;
     private String role = "customer";
-    private Boolean addCustomer = null;
-    private Boolean noSpace = null;
+//    private Boolean addCustomer = null;
+//    private Boolean noSpace = null;
     private String method = null;
     private String messege = null;
 
@@ -38,18 +38,18 @@ public class RegisterForm extends ActionForm {
     public void setRole(String role) {
         this.role = role;
     }
-    public boolean isAddCustomer() {
-        return addCustomer;
-    }
-    public void setAddCustomer(boolean addCustomer) {
-        this.addCustomer = addCustomer;
-    }
-    public boolean getNoSpace() {
-        return noSpace;
-    }
-    public void setNoSpace(boolean noSpace) {
-        this.noSpace = noSpace;
-    }
+//    public boolean isAddCustomer() {
+//        return addCustomer;
+//    }
+//    public void setAddCustomer(boolean addCustomer) {
+//        this.addCustomer = addCustomer;
+//    }
+//    public boolean getNoSpace() {
+//        return noSpace;
+//    }
+//    public void setNoSpace(boolean noSpace) {
+//        this.noSpace = noSpace;
+//    }
     public String getMessege() {
         return messege;
     }
@@ -60,8 +60,8 @@ public class RegisterForm extends ActionForm {
     public void reset() {
         setUserName("");
         setPassWord("");
-        setAddCustomer(true);
-        setNoSpace(false);
+//        setAddCustomer(true);
+//        setNoSpace(false);
         setMethod("");
         setMessege(shop.getMesseges().getString("register.addCustomer.success"));
     }

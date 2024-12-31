@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="672870ef-30d4-460d-8a10-b406004d6517" name="Changes" comment="Completed login&amp;register &gt;&gt; admin&amp;customer">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Exceptions/LoginWrongException.java" afterDir="false" />
+    <list default="true" id="672870ef-30d4-460d-8a10-b406004d6517" name="Changes" comment="login Handle with , LoginWrongException class for example">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/products/BookProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/products/ClothingProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/products/DairyProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/products/DigitalProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/products/SnackProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webstore/Actions/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Actions/LoginAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webstore/Actions/RegisterAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Actions/RegisterAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webstore/Forms/RegisterForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Forms/RegisterForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +195,7 @@
       <workItem from="1735294254705" duration="1293000" />
       <workItem from="1735295576922" duration="13825000" />
       <workItem from="1735572600993" duration="16082000" />
-      <workItem from="1735672836862" duration="1668000" />
+      <workItem from="1735672836862" duration="6015000" />
     </task>
     <task id="LOCAL‎−۰۰۰۰۱" summary="first commit">
       <option name="closed" value="true" />
@@ -242,7 +246,14 @@
       <option name="presentableId" value="LOCAL‎−۰۰۰۰۷" />
       <updated>1735645853321</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL‎−۰۰۰۰۸" summary="login Handle with , LoginWrongException class for example">
+      <option name="closed" value="true" />
+      <created>1735674824119</created>
+      <option name="number" value="LOCAL‎−۰۰۰۰۸" />
+      <option name="presentableId" value="LOCAL‎−۰۰۰۰۸" />
+      <updated>1735674824119</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,6 +275,7 @@
     <MESSAGE value="oraganized code" />
     <MESSAGE value="add abstract user &gt;&gt; admin,customer&#10;and add radio botton for select&#10;and update LoginForm &amp; RegisterForm" />
     <MESSAGE value="Completed login&amp;register &gt;&gt; admin&amp;customer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed login&amp;register &gt;&gt; admin&amp;customer" />
+    <MESSAGE value="login Handle with , LoginWrongException class for example" />
+    <option name="LAST_COMMIT_MESSAGE" value="login Handle with , LoginWrongException class for example" />
   </component>
 </project>

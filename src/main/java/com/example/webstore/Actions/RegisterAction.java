@@ -1,5 +1,4 @@
 package com.example.webstore.Actions;
-
 import com.example.webstore.Entities.Admin;
 import com.example.webstore.Entities.Customer;
 import com.example.webstore.Entities.Shop;
@@ -9,7 +8,6 @@ import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 import org.apache.struts.actions.DispatchAction;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
