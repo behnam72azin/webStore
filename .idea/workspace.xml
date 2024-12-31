@@ -8,14 +8,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webstore/Actions/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Actions/LoginAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webstore/Actions/RegisterAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Actions/RegisterAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/Shop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webstore/Forms/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Forms/LoginForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webstore/Forms/RegisterForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Forms/RegisterForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/messeges.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messeges.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style/register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,5 +257,16 @@
     <MESSAGE value="oraganized code" />
     <MESSAGE value="add abstract user &gt;&gt; admin,customer&#10;and add radio botton for select&#10;and update LoginForm &amp; RegisterForm" />
     <option name="LAST_COMMIT_MESSAGE" value="add abstract user &gt;&gt; admin,customer&#10;and add radio botton for select&#10;and update LoginForm &amp; RegisterForm" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/Customer.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

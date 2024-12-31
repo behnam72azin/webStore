@@ -1,25 +1,31 @@
 package com.example.webstore.Entities;
-import java.util.Objects;
+
 public class Customer extends User{
     public Customer(String userName,String password){
-        setUserName(userName);
-        setPassword(password);
-    }
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Customer customer = (Customer) o;
-        return Objects.equals(getUserName(), customer.getUserName()) && Objects.equals(getPassword(), customer.getPassword());
+        super.setUserName(userName);
+        super.setPassWord(password);
     }
 
     @Override
-    public void login() {
-        //TODO
+    public boolean login() {
+        if(customerIsthere()){
+            return true;
+        }else {
+            return false;
+        }
     }
 
     @Override
-    public void register() {
-        //TODO
+    public int register() {
+        if(!customerIsthere()){
+            Shop.getShop().getCustomers().add(this);
+            return 1;
+        }else{
+            return 0;
+        }
+    }
+
+    private boolean customerIsthere() {
+        return Shop.getShop().getCustomers().contains(this);
     }
 }

@@ -1,11 +1,10 @@
 package com.example.webstore.Actions;
-
+import com.example.webstore.Entities.Admin;
 import com.example.webstore.Entities.Customer;
-import com.example.webstore.Entities.Shop;
+import com.example.webstore.Entities.User;
 import com.example.webstore.Forms.LoginForm;
 import org.apache.struts.action.*;
 import org.apache.struts.actions.DispatchAction;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 public class LoginAction extends DispatchAction {
@@ -26,6 +25,7 @@ public class LoginAction extends DispatchAction {
 
         if(isValid(userName,passWord,role)){
             request.getSession().setAttribute("username", userName);
+            request.getSession().setAttribute("role" , role);
             loginForm.reset();
             ActionErrors actionErrors = new ActionErrors();
             actionErrors.add("test.error",new ActionError("test.error"));
@@ -38,24 +38,13 @@ public class LoginAction extends DispatchAction {
         }
     }
     private boolean isValid(String userName, String passWord, String role) {
-
         if("customer".equalsIgnoreCase(role)){
-
-            //TODO
-
+            User customer = new Customer(userName,passWord);
+            return customer.login();
         } else if ("admin".equalsIgnoreCase(role)) {
-
-            //TODO
-
-        }
-
-        Customer[] customers = Shop.getShop().getAllCustomers();
-        Customer customer = new Customer(userName,passWord);
-        for(Customer cu : customers){
-                if(cu!=null && cu.equals(customer)){
-                    return true;
-                }
-        }
-        return false;
+            User admin = new Admin(userName,passWord);
+            return admin.login();
+        }else
+            return false;
     }
 }

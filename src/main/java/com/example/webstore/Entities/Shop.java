@@ -1,6 +1,8 @@
 package com.example.webstore.Entities;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class Shop {
@@ -12,8 +14,25 @@ public class Shop {
     private List<Customer> customers ;
     private List<Admin> admins;
 
+    public List<Customer> getCustomers() {
+        return customers;
+    }
+
+    public void setCustomers(List<Customer> customers) {
+        this.customers = customers;
+    }
+
+    public List<Admin> getAdmins() {
+        return admins;
+    }
+
+    public void setAdmins(List<Admin> admins) {
+        this.admins = admins;
+    }
+
     private Shop() {
-//        customers = new Customer[3];
+        customers = new ArrayList<>();
+        admins = new ArrayList<>();
         customerCount = 0;
         messages = ResourceBundle.getBundle("messeges");
     }
@@ -52,4 +71,8 @@ public class Shop {
 //        }
         return -1;
     }
+
+
+
+
 }

@@ -1,6 +1,9 @@
 package com.example.webstore.Actions;
 
+import com.example.webstore.Entities.Admin;
+import com.example.webstore.Entities.Customer;
 import com.example.webstore.Entities.Shop;
+import com.example.webstore.Entities.User;
 import com.example.webstore.Forms.RegisterForm;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
@@ -25,22 +28,30 @@ public class RegisterAction extends DispatchAction {
         String password = registerForm.getPassWord();
         String role = registerForm.getRole();
 
-        int status = -2;
-        status = shop.addNewCustomer(username,password);
-        if(status==1) {
-            registerForm.setAddCustomer(false);
-            registerForm.setMessege(shop.getMesseges().getString("register.addCustomer.fail"));
-        }
-        if(status==0) {
-//            registerForm.setAddCustomer(true);
-            registerForm.reset();
+        int status = -1;
+        if("admin".equalsIgnoreCase(role)){
 
-        }
-        if(status==-1) {
-            registerForm.setNoSpace(true);
-            registerForm.setMessege(shop.getMesseges().getString("register.addCustomer.noSpace"));
+            User admin = new Admin(username,password);
+            status = admin.register();
+            setStatus(status,registerForm);
+
+        } else if ("customer".equalsIgnoreCase(role)) {
+
+            User customer = new Customer(username,password);
+            status = customer.register();
+            setStatus(status,registerForm);
         }
 
         return mapping.findForward("go-register");
     }
+
+    private void setStatus(int status, RegisterForm registerForm) {
+        if (status == 0) {
+            registerForm.setMessege(shop.getMesseges().getString("register.addCustomer.fail"));
+        } else if (status == 1) {
+            registerForm.reset();
+        }
+    }
 }
+
+
