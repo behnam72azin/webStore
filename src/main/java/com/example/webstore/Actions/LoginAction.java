@@ -2,6 +2,7 @@ package com.example.webstore.Actions;
 import com.example.webstore.Entities.Admin;
 import com.example.webstore.Entities.Customer;
 import com.example.webstore.Entities.User;
+import com.example.webstore.Exceptions.LoginWrongException;
 import com.example.webstore.Forms.LoginForm;
 import org.apache.struts.action.*;
 import org.apache.struts.actions.DispatchAction;
@@ -22,29 +23,28 @@ public class LoginAction extends DispatchAction {
         userName = loginForm.getUserName();
         passWord = loginForm.getPassWord();
         role = loginForm.getRole();
-
-        if(isValid(userName,passWord,role)){
-            request.getSession().setAttribute("username", userName);
-            request.getSession().setAttribute("role" , role);
-            loginForm.reset();
-            ActionErrors actionErrors = new ActionErrors();
-            actionErrors.add("test.error",new ActionError("test.error"));
-            request.getSession().setAttribute("actionErrors",actionErrors);
-//            saveErrors(request,actionErrors);
-            return mapping.findForward("go-welcome");
-        }else {
+        try {
+                isValid(userName,passWord,role);
+                request.getSession().setAttribute("username", userName);
+                request.getSession().setAttribute("role" , role);
+                loginForm.reset();
+                ActionErrors actionErrors = new ActionErrors();
+                actionErrors.add("test.error",new ActionError("test.error"));
+                request.getSession().setAttribute("actionErrors",actionErrors);
+                return mapping.findForward("go-welcome");
+        }catch (LoginWrongException ex){
             request.setAttribute("noCustomer","true");
-            return mapping.findForward("go-login");
         }
+        return mapping.findForward("go-login");
     }
-    private boolean isValid(String userName, String passWord, String role) {
-        if("customer".equalsIgnoreCase(role)){
-            User customer = new Customer(userName,passWord);
-            return customer.login();
+
+    private void isValid (String userName, String passWord, String role) throws LoginWrongException {
+        if ("customer".equalsIgnoreCase(role)) {
+            User customer = new Customer(userName, passWord);
+            customer.login();
         } else if ("admin".equalsIgnoreCase(role)) {
-            User admin = new Admin(userName,passWord);
-            return admin.login();
-        }else
-            return false;
+            User admin = new Admin(userName, passWord);
+            admin.login();
+        }
     }
 }

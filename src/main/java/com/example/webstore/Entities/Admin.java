@@ -1,5 +1,7 @@
 package com.example.webstore.Entities;
 
+import com.example.webstore.Exceptions.LoginWrongException;
+
 public class Admin extends User{
     public Admin(String userName,String passWord) {
         super.setUserName(userName);
@@ -7,11 +9,9 @@ public class Admin extends User{
     }
 
     @Override
-    public boolean login(){
-        if(adminIsthere()){
-            return true;
-        }else {
-            return false;
+    public void login() throws LoginWrongException {
+        if (!adminIsthere()) {
+            throw new LoginWrongException();
         }
     }
 

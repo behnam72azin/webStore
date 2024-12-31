@@ -1,5 +1,7 @@
 package com.example.webstore.Entities;
 
+import com.example.webstore.Exceptions.LoginWrongException;
+
 import java.util.Objects;
 
 public abstract class User {
@@ -20,7 +22,7 @@ public abstract class User {
         this.passWord = passWord;
     }
 
-    public abstract boolean login();
+    public abstract void login() throws LoginWrongException;
     public abstract int register();
 
     @Override
