@@ -4,17 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="672870ef-30d4-460d-8a10-b406004d6517" name="Changes" comment="login Handle with , LoginWrongException class for example">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/products/BookProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/products/ClothingProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/products/DairyProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/products/DigitalProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/products/SnackProduct.java" afterDir="false" />
+    <list default="true" id="672870ef-30d4-460d-8a10-b406004d6517" name="Changes" comment="Add Products classes extended Product,&#10;is not completed">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Forms/WelcomeForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webstore/Actions/RegisterAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Actions/RegisterAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webstore/Actions/WelcomeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Actions/WelcomeAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Entities/Shop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webstore/Forms/RegisterForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webstore/Forms/RegisterForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/messeges.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messeges.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/struts-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/struts-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/products.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/welcome.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +193,8 @@
       <workItem from="1735294254705" duration="1293000" />
       <workItem from="1735295576922" duration="13825000" />
       <workItem from="1735572600993" duration="16082000" />
-      <workItem from="1735672836862" duration="6015000" />
+      <workItem from="1735672836862" duration="8449000" />
+      <workItem from="1735716681471" duration="10049000" />
     </task>
     <task id="LOCAL‎−۰۰۰۰۱" summary="first commit">
       <option name="closed" value="true" />
@@ -253,7 +252,14 @@
       <option name="presentableId" value="LOCAL‎−۰۰۰۰۸" />
       <updated>1735674824119</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL‎−۰۰۰۰۹" summary="Add Products classes extended Product,&#10;is not completed">
+      <option name="closed" value="true" />
+      <created>1735679601276</created>
+      <option name="number" value="LOCAL‎−۰۰۰۰۹" />
+      <option name="presentableId" value="LOCAL‎−۰۰۰۰۹" />
+      <updated>1735679601276</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +282,23 @@
     <MESSAGE value="add abstract user &gt;&gt; admin,customer&#10;and add radio botton for select&#10;and update LoginForm &amp; RegisterForm" />
     <MESSAGE value="Completed login&amp;register &gt;&gt; admin&amp;customer" />
     <MESSAGE value="login Handle with , LoginWrongException class for example" />
-    <option name="LAST_COMMIT_MESSAGE" value="login Handle with , LoginWrongException class for example" />
+    <MESSAGE value="Add Products classes extended Product,&#10;is not completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Products classes extended Product,&#10;is not completed" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/webstore/Actions/WelcomeAction.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/webstore/Actions/WelcomeAction.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

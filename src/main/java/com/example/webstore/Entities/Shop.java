@@ -8,6 +8,7 @@ public class Shop {
     private ResourceBundle messages;
     private List<Customer> customers ;
     private List<Admin> admins;
+    private String[] productsNameList ;
     public List<Customer> getCustomers() {
         return customers;
     }
@@ -20,10 +21,23 @@ public class Shop {
     public void setAdmins(List<Admin> admins) {
         this.admins = admins;
     }
+    public String[] getProductsNameList() {
+        return productsNameList;
+    }
+    public void setProductsNameList(String[] productsNameList) {
+        this.productsNameList = productsNameList;
+    }
     private Shop() {
         customers = new ArrayList<>();
         admins = new ArrayList<>();
         messages = ResourceBundle.getBundle("messeges");
+        productsNameList = new String[]{
+                messages.getString("product.name.Book"),
+                messages.getString("product.name.Clothing"),
+                messages.getString("product.name.Dairy"),
+                messages.getString("product.name.Digital"),
+                messages.getString("product.name.Snack"),
+        };
     }
     public static Shop getShop() {
         if(shop==null) {

@@ -20,10 +20,40 @@
     <%=request.getSession().getAttribute("username")%>
     <bean:message bundle="myMesseges" key="welcome.messege"/>
 </h1>
-<a href="products.do" target="_parent" style="text-decoration: none;">
-    <label style="color: brown; "> <bean:message bundle="myMesseges" key="welcome.showlink"/> </label>
-</a>
+
+<h2><bean:message bundle="myMesseges" key="welcome.label.selectedProduct"/></h2>
+
+<html:form action="/welcome" method="post" styleId="strutsFormId" onsubmit="return validateForm();">
+    <html:hidden property="method" styleId="strutsMethod"/>
+    <label for="select-product"><bean:message bundle="myMesseges" key="welcome.label.selectProductGroup"/> </label>
+    <html:select property="selectedProduct" styleId="select-product">
+        <html:option value="">-- لطفاً یک گزینه انتخاب کنید --</html:option>
+        <html:options property="nameProducts"/>
+    </html:select>
+    <br/><br/>
+    <span id="error-message" style="color: red;"></span>
+    <br/><br/>
+    <html:submit value="ورود"/>
+</html:form>
+
+<%--<a href="products.do" target="_parent" style="text-decoration: none;">--%>
+<%--    <label style="color: brown; "> <bean:message bundle="myMesseges" key="welcome.showlink"/> </label>--%>
+<%--</a>--%>
 <br>
 <html:errors bundle="myMesseges"/>
 </body>
+<script>
+    function validateForm() {
+        var selectedProduct = document.getElementById("select-product").value;
+        var errorMessage = document.getElementById("error-message");
+        if (selectedProduct === "" || selectedProduct == null) {
+            errorMessage.innerText = "لطفاً یک محصول از لیست انتخاب کنید.";
+            return false;
+        }
+        errorMessage.innerText = "";
+        document.getElementById("strutsMethod").value = "selectedProduct";
+        return true;
+    }
+</script>
+
 </html>
